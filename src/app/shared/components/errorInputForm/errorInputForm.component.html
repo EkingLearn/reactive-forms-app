@@ -1,0 +1,7 @@
+@if (formUtils.isInvalidField(form(), field())) {
+<span class="form-text text-danger">
+  {{formUtils.getFieldError(form(), field())}}
+  <ng-content></ng-content>
+</span>
+}
+

@@ -1,0 +1,6 @@
+@if (!!form().errors) {
+<span class="form-text text-danger">
+  {{formUtils.getFormErrors(form())}}
+  <ng-content></ng-content>
+</span>
+}
